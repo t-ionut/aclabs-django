@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 from aclabs.views import hello_world
+from todo.views import todo_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello-world/', hello_world),
+    path('todos/', todo_list)
 ]
